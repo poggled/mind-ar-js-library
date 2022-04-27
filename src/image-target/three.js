@@ -93,7 +93,7 @@ class MindARThree {
       }
 
       navigator.mediaDevices.getUserMedia({audio: false, video: {
-	facingMode: 'user',
+	facingMode: 'environment',
       }}).then((stream) => {
 	this.video.addEventListener( 'loadedmetadata', () => {
 	  this.video.setAttribute('width', this.video.videoWidth);

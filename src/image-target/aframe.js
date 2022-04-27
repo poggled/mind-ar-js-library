@@ -86,7 +86,7 @@ AFRAME.registerSystem('mindar-image-system', {
     }
 
     navigator.mediaDevices.getUserMedia({audio: false, video: {
-      facingMode: 'user',
+      facingMode: 'environment',
     }}).then((stream) => {
       this.video.addEventListener( 'loadedmetadata', () => {
         //console.log("video ready...", this.video);
